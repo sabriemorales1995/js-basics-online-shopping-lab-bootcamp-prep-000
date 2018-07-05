@@ -22,7 +22,7 @@ function viewCart() {
   if(cart.length!==0){
    var returnStatement= `In your cart, you have`;
     for(var i=0; i<cart.length;i++){
-      returnStatement+= ` ${cart[i]} at $${cart[i].itemPrice}`;
+      returnStatement+= ` ${cart[i].itemName} at $${cart[i].itemPrice}`;
       if(cart.length>i+1){
         returnStatement+= `, `;
       }
