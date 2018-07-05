@@ -11,9 +11,10 @@ function setCart(c) {
 
 function addToCart(item) {
   var temp={
-    itemName : item,
+    itemName : [item],
     itemPrice: 0
   };
+  //temp.itemName[]
 }
 
 function viewCart() {
