@@ -15,6 +15,7 @@ function addToCart(item) {
     itemPrice: (Math.floor(Math.random()*100))
   };
   cart[cart.length]=temp;
+  return `${item} has been added to your cart.`
 }
 
 function viewCart() {
