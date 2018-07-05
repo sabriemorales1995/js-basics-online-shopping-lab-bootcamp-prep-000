@@ -15,11 +15,25 @@ function addToCart(item) {
     itemPrice: (Math.floor(Math.random()*100))
   };
   cart[cart.length]=temp;
-  return `${item} has been added to your cart.`
+  return `${item} has been added to your cart.`;
 }
 
 function viewCart() {
-  for(var i=0; i<cart.length;i++){
+  if(cart.length!==0){
+   var returnStatement= `In your cart, you have`;
+    for(var i=0; i<cart.length;i++){
+      returnStatement+= ` ${cart[i]} at $${cart[i].itemPrice}`;
+      if(cart.length>i+1){
+        returnStatement+= `, `;
+      }
+      if(cart.length===i-1){
+        returnStatement+= `and `;
+      }
+    //In your cart, you have\\ bananas at $17, pancake batter at $5, and eggs at $49.
+    }
+    returnStatement+= `.`;
+    return returnStatement;
+  }else{
     
   }
 }
