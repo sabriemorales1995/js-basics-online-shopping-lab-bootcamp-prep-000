@@ -12,9 +12,9 @@ function setCart(c) {
 function addToCart(item) {
   var temp={
     itemName : [item],
-    itemPrice: 0
+    itemPrice: (Math.floor(Math.random()*100))
   };
-  //temp.itemName[]
+  cart[cart.length]=temp;
 }
 
 function viewCart() {
