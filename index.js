@@ -59,7 +59,7 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
-  if(cardNumbe)r{
+  if(Number.isInteger(cardNumber)){
     return `Sorry, we don't have a credit card on file for you.`;
   }
   var orderStatement= `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`;
