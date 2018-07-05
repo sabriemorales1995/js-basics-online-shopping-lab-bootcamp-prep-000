@@ -26,7 +26,7 @@ function viewCart() {
       if(cart.length>i+1){
         returnStatement+= `,`;
       }
-      if(cart.length-1===i){
+      if(cart.length-1===i-1){
         returnStatement+= `and `;
       }
     //In your cart, you have\\ bananas at $17, pancake batter at $5, and eggs at $49.
