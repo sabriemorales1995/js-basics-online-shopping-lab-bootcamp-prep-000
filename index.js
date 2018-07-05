@@ -22,12 +22,12 @@ function viewCart() {
   if(cart.length!==0){
    var returnStatement= `In your cart, you have`;
     for(var i=0; i<cart.length;i++){
+      if(cart.length-1===i&&cart.length>0){
+        returnStatement+= ` and`;
+      }
       returnStatement+= ` ${cart[i].itemName} at $${cart[i].itemPrice}`;
       if(cart.length>i+1){
         returnStatement+= `,`;
-      }
-      if(cart.length-1===i&&cart.length>0){
-        returnStatement+= ` and`;
       }
     //In your cart, you have\\ bananas at $17, pancake batter at $5, and eggs at $49.
     }
